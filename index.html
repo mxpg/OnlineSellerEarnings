@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <title>Online Seller Income Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>online seller income tracker</h1>
+        <div class="info">
+            <form>
+                <input type="text" id="product__name" placeholder="Product Name*">
+                <div class="product__info">
+                    <input type="number" id="money__received" class="input__number"
+                    placeholder="received">
+                    <input type="number" id="fees" class="input__number" placeholder="fees paid">
+                    <input type="number" id="shipping" class="input__number" placeholder="shipping cost">
+                    <br><em><font color="grey"> * Required field</font></em>
+                </div>
+                <button type="submit" class="submit__btn">Add Sale</button>
+            </form>
+            <div class="summary">
+                <i class="fas fa-dollar-sign"></i>
+                <h2>profits</h2>
+                <span id="profit">
+                    0
+                </span>
+            </div>
+        </div>
+
+        <!-- SALES SUMMARY -->
+        <div class="sales__container">
+            <!-- <div class="sale">
+                <button class="sale__summary">
+                    <div class="sale__summary--info">
+                        <p class="item__sold">
+                            clothes
+                        </p>
+                        <span class="profit">
+                            12.22
+                        </span>
+                    </div>
+                    
+                    <span class="arrow">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </button>
+                <div class="sale__details">
+                    <div class="sale__number">
+                        <p>
+                            Money Received:
+                            <span id="money__received">
+                                666.88
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sale__number">
+                        <p>
+                            Fees Paid:
+                            <span id="fees__paid">
+                                66.88
+                            </span>
+                        </p>
+                    </div>
+                    <div class="sale__number">
+                        <p>
+                            Shipping Cost:
+                            <span id="shipping__cost">
+                                12.33
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
